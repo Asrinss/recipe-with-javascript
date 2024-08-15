@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Sayfa karakter setini ve tarayıcı görünüm ayarlarını yapıyoruz -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Tarayıcı sekmesinde görünecek sayfa başlığı -->
+  <title>Find Meal For Your Ingredients</title>
+  
+  <!-- Font Awesome kütüphanesi: ikonları kullanmak için -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  <!-- Sayfanın görünümünü düzenleyen CSS dosyası -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Ana içerik konteyneri -->
+  <div class="container">
+    
+    <!-- Tüm yemek arama ve sonuçlarını içeren ana bölüm -->
+    <div class="meal-wrapper">
+      
+      <!-- Yemek arama bölümü -->
+      <div class="meal-search">
+        <!-- Arama bölümünün başlığı -->
+        <h2 class="title">Find Meals</h2>
+        
+        <!-- Arama kutusu ve butonu içeren kısım -->
+        <div class="meal-search-box">
+          <!-- Kullanıcının arama yapacağı metin kutusu -->
+          <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input">
+          
+          <!-- Arama işlemini başlatan buton -->
+          <button type="submit" class="search-btn btn" id="search-btn">
+            <!-- Arama simgesi (lupa) -->
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Yemek arama sonuçlarının görüntüleneceği bölüm -->
+      <div class="meal-result">
+        <!-- Sonuçlar başlığı -->
+        <h2 class="title">Your Search Results:</h2>
+        
+        <!-- Arama sonuçlarının (yemeklerin) gösterileceği kısım -->
+        <div id="meal">         
+        </div>
+      </div>
+
+      <!-- Yemek tarifi detaylarını gösteren modal bölüm -->
+      <div class="meal-details">
+        
+        <!-- Tarif modalını kapatma butonu -->
+        <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+          <!-- Kapatma simgesi (çarpı) -->
+          <i class="fas fa-times"></i>
+        </button>
+
+        <!-- Yemek detaylarının görüntüleneceği içerik bölümü -->
+        <div class="meal-details-content">
+          <!-- Tarif detayları JavaScript ile burada gösterilecek -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript dosyasını sayfaya dahil ediyoruz -->
+  <script src="script.js"></script>
+</body>
+</html>
+
